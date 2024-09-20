@@ -7,6 +7,7 @@ from environmental_data import get_data
 @app.route('/')
 @app.route('/home')
 def home_page():
+    print('Request for index page received')
     return "home page"
 
 @app.route('/upload', methods=['POST'])
